@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D1AEB0D6B3522E9E45BE51 /* Pods_Ejianqian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA92FAAC0401E4485C2507C1 /* Pods_Ejianqian.framework */; };
 		7512036D20D0AEFE00402FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512036C20D0AEFE00402FDC /* AppDelegate.swift */; };
 		7512037220D0AEFE00402FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7512037020D0AEFE00402FDC /* Main.storyboard */; };
 		7512037420D0AEFF00402FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7512037320D0AEFF00402FDC /* Assets.xcassets */; };
@@ -61,6 +62,9 @@
 		751203BD20D0BA6900402FDC /* Market.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Market.storyboard; sourceTree = "<group>"; };
 		751203C020D0BA7900402FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ejianqian/Base.lproj/Order.storyboard; sourceTree = "<group>"; };
 		751203C220D0BA8800402FDC /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B79A90B7DB254BB7BDCA8A76 /* Pods-Ejianqian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ejianqian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ejianqian/Pods-Ejianqian.debug.xcconfig"; sourceTree = "<group>"; };
+		C4978DF499BA5EC53D61E206 /* Pods-Ejianqian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ejianqian.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ejianqian/Pods-Ejianqian.release.xcconfig"; sourceTree = "<group>"; };
+		CA92FAAC0401E4485C2507C1 /* Pods_Ejianqian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ejianqian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D1AEB0D6B3522E9E45BE51 /* Pods_Ejianqian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CBD7F3B74CD5DE8D0F17652 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B79A90B7DB254BB7BDCA8A76 /* Pods-Ejianqian.debug.xcconfig */,
+				C4978DF499BA5EC53D61E206 /* Pods-Ejianqian.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7512036020D0AEFE00402FDC = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +109,8 @@
 				7512038020D0AEFF00402FDC /* EjianqianTests */,
 				7512038B20D0AEFF00402FDC /* EjianqianUITests */,
 				7512036A20D0AEFE00402FDC /* Products */,
+				4CBD7F3B74CD5DE8D0F17652 /* Pods */,
+				C7EE1222CEE7F96896F46B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -298,6 +314,14 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		C7EE1222CEE7F96896F46B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA92FAAC0401E4485C2507C1 /* Pods_Ejianqian.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7512039120D0AEFF00402FDC /* Build configuration list for PBXNativeTarget "Ejianqian" */;
 			buildPhases = (
+				1C6F2560F50A52B779437342 /* [CP] Check Pods Manifest.lock */,
 				7512036520D0AEFE00402FDC /* Sources */,
 				7512036620D0AEFE00402FDC /* Frameworks */,
 				7512036720D0AEFE00402FDC /* Resources */,
+				BB364A60236A6DFC7A0DF7B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,6 +453,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C6F2560F50A52B779437342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ejianqian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB364A60236A6DFC7A0DF7B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ejianqian/Pods-Ejianqian-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ejianqian/Pods-Ejianqian-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7512036520D0AEFE00402FDC /* Sources */ = {
@@ -624,15 +693,13 @@
 		};
 		7512039220D0AEFF00402FDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79A90B7DB254BB7BDCA8A76 /* Pods-Ejianqian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UKBZQ5P63;
 				INFOPLIST_FILE = Ejianqian/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiju.Ejianqian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -642,15 +709,13 @@
 		};
 		7512039320D0AEFF00402FDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4978DF499BA5EC53D61E206 /* Pods-Ejianqian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UKBZQ5P63;
 				INFOPLIST_FILE = Ejianqian/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiju.Ejianqian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -666,11 +731,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UKBZQ5P63;
 				INFOPLIST_FILE = EjianqianTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiju.EjianqianTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -687,11 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UKBZQ5P63;
 				INFOPLIST_FILE = EjianqianTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiju.EjianqianTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -707,11 +764,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UKBZQ5P63;
 				INFOPLIST_FILE = EjianqianUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiju.EjianqianUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -727,11 +780,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UKBZQ5P63;
 				INFOPLIST_FILE = EjianqianUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiju.EjianqianUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -1,0 +1,6 @@
+framework module Pods_Ejianqian {
+  umbrella header "Pods-Ejianqian-umbrella.h"
+
+  export *
+  module * { export * }
+}
