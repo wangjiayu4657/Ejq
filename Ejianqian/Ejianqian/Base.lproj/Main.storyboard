@@ -33,7 +33,7 @@
         <scene sceneID="3Ss-P9-x1i">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="XzG-gG-d9G" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MVc-9A-6ng"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="首页hov" id="MVc-9A-6ng"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TVS-cz-5VS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,4 +70,7 @@
             <point key="canvasLocation" x="219" y="-937"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="首页hov" width="20" height="20"/>
+    </resources>
 </document>
